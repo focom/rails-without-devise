@@ -3,7 +3,7 @@
 
 To start this project I used the [Heroku boilerplate](https://github.com/heroku/ruby-getting-started)
 
-All the required features are implemented:
+All the required features are implemented `without devise`:
 - Registration
 - Login/Logout
 - Profile update
