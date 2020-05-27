@@ -32,7 +32,7 @@ The project run on port `3000`
 ```bash
 rails test
 ```
-I ran out of time to improve coverage of test but I think they show my ability to write
+I ran out of time to improve the coverage but I think the tests show my ability to write both
 `unittest` and `end2end test`
 
 ## Screenshots
