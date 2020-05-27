@@ -1,0 +1,44 @@
+<div class="container">
+<div class="row">
+<h1>Profile page</h1>
+</div>
+<div class="row">
+   You can't modifiy your email: <%= @user['email']%>
+</div>
+<br>
+</div>
+<div class="container">
+<div class="row">
+
+  <%= form_for(@user, url: user_path(@user.id)) do |form| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@user.errors.count, "error") %> prohibited
+        this user from being saved:
+      </h2>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <p>
+      <%= form.label :username %><br>
+      <%= form.text_field :username %>
+    </p>
+    <p>
+      <%= form.label :password %><br>
+      <%= form.text_field :password %>
+    </p>
+    <p>
+      <%= form.label :password_confirmation %><br>
+      <%= form.text_field :password_confirmation %>
+    </p>
+    <p>
+      <%= form.submit 'Update'%>
+    </p>
+  <% end %>
+</div>
+</div>

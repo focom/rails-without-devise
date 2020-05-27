@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: test1@email.com
+  username: test1
+  password_digest: <%= BCrypt::Password.create("12345678") %>
+  reset_password_token: 'reset_token'
+  reset_password_sent_at: 2020-05-27 17:27:11
+
+two:
+  email: test2@email.com
+  username: test2
+  password_digest: <%= BCrypt::Password.create("12345678") %>
+  reset_password_token: 'reset_token'
+  reset_password_sent_at: 2020-05-27 17:27:11

@@ -1,0 +1,33 @@
+<div class="container">
+
+  <%= form_with url: users_path, scope: :user, local: true do |form| %>
+    <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@user.errors.count, "error") %> prohibited
+        this user from being saved:
+      </h2>
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <p>
+      <%= form.label :email %><br>
+      <%= form.text_field :email, id:'name' %>
+    </p>
+    <p>
+      <%= form.label :password %><br>
+      <%= form.text_field :password , id: 'password'%>
+    </p>
+    <p>
+      <%= form.label :password_confirmation %><br>
+      <%= form.text_field :password_confirmation , id: 'password_confirmation'%>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+</div>
