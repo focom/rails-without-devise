@@ -1,0 +1,11 @@
+<div class="container">
+  <%= form_with url: url_for(controller: 'password_recovery', action: 'send_reset_email'), local: true do |form| %>
+    <p>
+      <%= form.label :email %><br>
+      <%= form.text_field :email %>
+    </p>
+    <p>
+      <%= form.submit 'Send reset email'%>
+    </p>
+  <% end %>
+</div>
