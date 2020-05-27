@@ -1,67 +1,36 @@
-# ruby-getting-started
+# rails-without-devise
+## Incubit challenge
 
-A barebones Rails app, which can easily be deployed to Heroku.
+To start this project I used the [Heroku boilerplate](https://github.com/heroku/ruby-getting-started)
 
-This application supports the [Getting Started on Heroku with Ruby](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
+All the required features are implemented:
+- Registration
+- Login/Logout
+- Profile update
+- Reset password with email
 
-## Running Locally
-
-Make sure you have Ruby installed.  Also, install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) (formerly known as the Heroku Toolbelt).
-
-```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
-$ bundle install
-$ bundle exec rake db:create db:migrate
-$ heroku local
+## Run the project
+```bash
+git clone https://github.com/focom/rails-without-devise.git
+cd rails-without-devise
+bundle install
+rails db:create
+rails db:migrate
+rails s
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+You can now open the project in [your browser here](http://localhost:3000/)
 
-## Deploying to Heroku
+The project run on port `3000`
 
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku run rake db:migrate
-$ heroku open
+## Run the tests
+```bash
+rails test
 ```
+I ran out of time to improve coverage of test but I think they show my ability to write
+`unittest` and `end2end test`
 
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Docker
-
-The app can be run and tested using the [Heroku Docker CLI plugin](https://devcenter.heroku.com/articles/local-development-with-docker-compose).
-
-Make sure the plugin is installed:
-
-    heroku plugins:install heroku-docker
-
-Configure Docker and Docker Compose:
-
-    heroku docker:init
-
-And run the app locally:
-
-    docker-compose up web
-
-The app will now be available on the Docker daemon IP on port 8080.
-
-To work with the local database and do migrations, you can open a shell:
-
-    docker-compose run shell
-    bundle exec rake db:migrate
-
-You can also use Docker to release to Heroku:
-
-    heroku create
-    heroku docker:release
-    heroku open
-
-## Documentation
-
-For more information about using Ruby on Heroku, see these Dev Center articles:
-
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
+## Screenshots
+![1](/screenshots/Screenshot%20from%202020-05-27%2002-00-27.png)
+![2](/screenshots/Screenshot%20from%202020-05-27%2002-01-00.png)
+![3](/screenshots/Screenshot%20from%202020-05-27%2002-01-52.png)
