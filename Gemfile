@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '>= 2.3.5', '< 2.8'
 
@@ -39,3 +41,22 @@ gem 'puma'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bcrypt'
+gem 'letter_opener', groups: %i[development test]
+
+gem 'byebug', '~> 11.1', groups: %i[development test]
+
+gem 'rubocop', '~> 0.84.0', groups: %i[development test]
+
+group :test do
+  gem 'database_cleaner'
+  gem 'minitest', '~> 5.11'
+  gem 'rspec-rails', '~> 3.9'
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 3.2'
+  gem 'capybara-email' # Test ActionMailer and Mailer messages with Capybara.
+  gem 'capybara-select-2'
+  gem 'capybara_minitest_spec', '~> 1.0'
+  gem 'rails-controller-testing' # If you are using Rails 5.x
+  gem 'shoulda-matchers', '4.0.0.rc1'
+end
