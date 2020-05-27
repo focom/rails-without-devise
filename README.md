@@ -32,5 +32,5 @@ I ran out of time to improve coverage of test but I think they show my ability t
 
 ## Screenshots
 ![1](/screenshots/Screenshot%20from%202020-05-27%2002-00-27.png)
-![2](/screenshots/Screenshot%20from%202020-05-27%2002-01-00.png)
+![2](/screenshots/Screenshot%20from%202020-05-27%2002-11-56.png)
 ![3](/screenshots/Screenshot%20from%202020-05-27%2002-01-52.png)
