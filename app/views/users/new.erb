@@ -16,15 +16,15 @@
   <% end %>
     <p>
       <%= form.label :email %><br>
-      <%= form.text_field :email, id:'name' %>
+      <%= form.text_field :email%>
     </p>
     <p>
       <%= form.label :password %><br>
-      <%= form.text_field :password , id: 'password'%>
+      <%= form.text_field :password , id: 'password', type: 'password'%>
     </p>
     <p>
       <%= form.label :password_confirmation %><br>
-      <%= form.text_field :password_confirmation , id: 'password_confirmation'%>
+      <%= form.text_field :password_confirmation , id: 'password_confirmation', type: 'password'%>
     </p>
     <p>
       <%= form.submit %>
