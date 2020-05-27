@@ -10,6 +10,11 @@ All the required features are implemented:
 - Reset password with email
 
 ## Run the project
+
+This rails deployement is using `PostgreSQL`, make sure you have
+a local psql instance running
+
+Then you can enter those commands:
 ```bash
 git clone https://github.com/focom/rails-without-devise.git
 cd rails-without-devise
